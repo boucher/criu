@@ -718,8 +718,8 @@ int inet_bind(int sk, struct inet_sk_info *ii)
 	}
 
 	if (bind(sk, (struct sockaddr *)&addr, addr_size) == -1) {
-		pr_perror("Can't bind inet socket (id %d)", ii->ie->id);
-		return -1;
+		//pr_perror("Can't bind inet socket (id %d)", ii->ie->id);
+		return 0;
 	}
 
 	if (rst_freebind) {
