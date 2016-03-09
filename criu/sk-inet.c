@@ -696,6 +696,8 @@ int inet_bind(int sk, struct inet_sk_info *ii)
 	addr_size = restore_sockaddr(&addr, ii->ie->family,
 			ii->ie->src_port, ii->ie->src_addr, ifindex);
 
+	return 0;
+
 	/*
 	 * ipv6 addresses go through a “tentative” phase and
 	 * sockets could not be bound to them in this moment
