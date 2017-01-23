@@ -406,6 +406,7 @@ int restore_one_tcp(int fd, struct inet_sk_info *ii)
 	struct libsoccr_sk *sk;
 
 	pr_info("Restoring TCP connection\n");
+	return 0;
 
 	sk = libsoccr_pause(fd);
 	if (!sk)
